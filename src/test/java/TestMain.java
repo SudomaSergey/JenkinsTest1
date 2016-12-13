@@ -33,7 +33,7 @@ public class TestMain {
 		category = Config.getProperty("category");
 		int timeout = Integer.parseInt(Config.getProperty("timeout"));
 		
-		System.setProperty("webdriver.chrome.driver", "/Webdriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Webdriver\\chromedriver.exe");
 		driver = initWebDriver();
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		driver.get(url);
